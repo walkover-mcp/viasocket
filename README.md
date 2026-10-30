@@ -2,7 +2,7 @@
 
 # viaSocket MCP
 
-Lets AI assistants work with [viaSocket](https://viasocket.com): build and manage your plugins (apps) in the Developer Hub, create automations (flows), and connect your product to 1,000+ apps with the viaSocket SDK.
+Lets AI assistants work with [viaSocket](https://viasocket.com): build and manage your plugins (apps) in the Developer Hub, create automations (flows), and connect your product to other apps with the viaSocket SDK.
 
 This is a remote MCP server (Streamable HTTP) at `https://connect.viasocket.com/mcp`. Nothing to install: your AI tool connects to it, and you sign in to viaSocket once through OAuth (the same account as viasocket.com). The docs tools work without signing in.
 
