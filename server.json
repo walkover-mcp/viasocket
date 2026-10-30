@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.viasocket/mcp",
+  "title": "viaSocket",
+  "description": "Build viaSocket plugins and automations, and connect your product to 1,000+ apps.",
+  "version": "1.0.0",
+  "websiteUrl": "https://viasocket.com",
+  "repository": {
+    "url": "https://github.com/walkover-mcp/viasocket",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://stuff.thingsofbrand.com/viasocket.com/images/imgf_logo-2.png",
+      "mimeType": "image/png",
+      "sizes": ["192x192"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://connect.viasocket.com/mcp"
+    }
+  ]
+}
