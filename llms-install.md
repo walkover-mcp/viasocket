@@ -29,7 +29,7 @@ The docs tools work right away. Tools that use the user's apps or change their v
 Call `search_viasocket_docs` with a question such as "how do I add an action to my plugin". It should return passages from the viaSocket docs. After sign-in, `get_org_details_by_token` returns the user's viaSocket organization.
 
 ## Using it
-Call `quickstart-viasocket-developer-hub` before any task: it loads the instructions for the rest of the tools. Confirm with the user before creating, publishing, deleting or running anything.
+To use the user's apps (Gmail, Slack, Google Sheets, HubSpot and more), read https://viasocket.com/docs/skill.md first and follow it. For plugin and Developer Hub work, call `quickstart-viasocket-developer-hub` first: it loads the instructions for those tools. Confirm with the user before creating, publishing, deleting or running anything.
 
 ## Tools
 - Docs: `search_viasocket_docs`, `get_viasocket_api_docs`, `quickstart-viasocket-developer-hub`

@@ -16,6 +16,8 @@ This is a remote MCP server (Streamable HTTP) at `https://connect.viasocket.com/
 | Any viaSocket API | `call_any_read_api_of_viasocket` (GET), `call_any_api_of_viasocket` (POST, PUT, PATCH, DELETE) |
 | Feedback | `report_feedback` |
 
+Using your apps (the connector): the guide for AI assistants is https://viasocket.com/docs/skill.md.
+
 ## Connect from Cline
 Install it from the Cline MCP Marketplace, or open **MCP Servers → Configure MCP Servers** and add this to `cline_mcp_settings.json`:
 ```json
