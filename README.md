@@ -2,7 +2,7 @@
 
 # viaSocket MCP
 
-Lets AI assistants work with [viaSocket](https://viasocket.com): build and manage your plugins (apps) in the Developer Hub, create automations (flows), and connect your product to other apps with the viaSocket SDK.
+Lets AI assistants use your apps through [viaSocket](https://viasocket.com): send an email, post to Slack, add a sheet row, read a CRM, on your own Gmail, Slack, Google Sheets, HubSpot or any of 2,300+ apps; automate across them; build and manage your plugins (apps) in the Developer Hub; and connect your product to other apps with the viaSocket SDK.
 
 This is a remote MCP server (Streamable HTTP) at `https://connect.viasocket.com/mcp`. Nothing to install: your AI tool connects to it, and you sign in to viaSocket once through OAuth (the same account as viasocket.com). The docs tools work without signing in.
 
@@ -10,10 +10,13 @@ This is a remote MCP server (Streamable HTTP) at `https://connect.viasocket.com/
 | Area | Tools |
 |---|---|
 | Docs | `search_viasocket_docs`, `get_viasocket_api_docs`, `quickstart-viasocket-developer-hub` |
+| Your apps | `search_apps`, `list_app_actions`, `list_connections`, `create_connection_link`, `run_app_action` |
 | Plugins (Developer Hub) | `list_plugins`, `list_auth_versions`, `list_actions_and_triggers`, `list_action_versions`, `get_plugin_analytics`, `report_published` |
 | Account and SDK | `get_org_details_by_token`, `list_embed_projects`, `get_viasocket_embed_secret` |
 | Any viaSocket API | `call_any_read_api_of_viasocket` (GET), `call_any_api_of_viasocket` (POST, PUT, PATCH, DELETE) |
 | Feedback | `report_feedback` |
+
+Using your apps (the connector): the guide for AI assistants is https://viasocket.com/docs/skill.md.
 
 ## Connect from Cline
 Install it from the Cline MCP Marketplace, or open **MCP Servers → Configure MCP Servers** and add this to `cline_mcp_settings.json`:
@@ -38,7 +41,7 @@ claude mcp add --transport http viasocket https://connect.viasocket.com/mcp
 then run `/mcp` and sign in.
 
 ## MCP Registry
-[server.json](server.json) is the listing for the official MCP Registry, as `com.viasocket/mcp`. The `com.viasocket` name is proven by owning the `viasocket.com` domain.
+[server.json](server.json) is the listing for the official MCP Registry, as `com.viasocket.mcp/mcp`. The `com.viasocket.mcp` name is proven by owning the `viasocket.com` domain (a `viasocket.com` DNS login covers its subdomains too).
 
 One-time setup: create a signing key and publish its public half on `viasocket.com` (Git Bash or any shell with OpenSSL):
 ```bash
